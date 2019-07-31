@@ -5,3 +5,5 @@
 *.suo
 /.vs
 /obj
+/bin/Debug
+/website/.vscode
