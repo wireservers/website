@@ -14,6 +14,8 @@ import { AboutComponent } from './about/about.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { TechnologyComponent } from './technology/technology.component';
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     TeamComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    TechnologyComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
