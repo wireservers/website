@@ -11397,7 +11397,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../../assets/img/bg/bg-circuits-gray.jpg");
+  background-image: url("../img/bg/708040780-vector [Converted].jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11707,9 +11707,11 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/bg/map-image.png");
+  background-image: url("../img/bg/bg-map-blue.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
 }
 section#contact .section-heading {
   color: #fff;
