@@ -22,13 +22,7 @@ steps:
     command: custom  
     verbose: false  
     customCommand: 'install -g @angular/cli@15.0.3'
- 
-- task: Npm@1  
-  displayName: 'npm install'  
-  inputs:
-    command: custom  
-    customCommand: 'install file:custom-angular-lib.tgz --legacy-peer-deps'  
-   
+
 - task: Npm@1  
   displayName: Build  
   inputs: 
