@@ -37,9 +37,8 @@ steps:
     verbose: false
     customCommand: 'run build'
 
-- task: PublishPipelineArtifact@1
-  displayName: 'Publish Pipeline'
+- task: PublishBuildArtifacts@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)'
-    artifact: 'wireservers-web-app-artifacts'
+    PathtoPublish: 'dist'
+    ArtifactName: 'wireservers-web-app-artifacts'
     
