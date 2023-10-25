@@ -28,7 +28,7 @@ steps:
   inputs:  
     command: custom  
     verbose: false  
-    customCommand: 'npm install --save-dev @angular-devkit/build-angular'
+    customCommand: 'install --save-dev @angular-devkit/build-angular'
 
 - task: Npm@1  
   displayName: Build  
