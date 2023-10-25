@@ -28,7 +28,7 @@ steps:
   inputs:  
     command: custom  
     verbose: false  
-    customCommand: 'install --save-dev @angular-devkit/build-angular'
+    customCommand: 'install --save-dev @angular-devkit/build-angular --legacy-peer-deps'
 
 - task: Npm@1  
   displayName: Build  
