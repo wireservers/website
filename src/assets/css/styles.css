@@ -11788,7 +11788,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .image-content {
-  width: 33%;
+  width: 29%;
   background-color: #fff;
 }
 
@@ -11800,13 +11800,46 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .text-content {
-  width: 50%;
+  width: 60%;
   padding: 2rem;
+  height: auto;
   background-color: #fff;
   margin-left: 2rem;
 }
 
-
 .text-content p{
   text-align: left;
+}
+
+.font-overlay{
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  top: 25%;
+  height: 25% !important;
+}
+
+.font-services{
+  margin: auto;
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  top: 0;
+  height: 25% !important;
+}
+
+.font-text {
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  left: 46%;
+  color: #21252A;
+  top: 10%;
+  font-weight: bolder;
+  height: 25% !important;
+}
+
+.font-lg {
+  font-size: 7rem;
 }
