@@ -21,22 +21,22 @@
       <li class="nav-item">
           <a class="nav-link" href="#home">Home</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#about">About Us</a>
-        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" fragment="about" (click)="navigateToSection('about')">about us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#technology">Technology</a>
+          <a class="nav-link" fragment="services" (click)="navigateToSection('services')">services</a>
         </li>
-        <!--<li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li-->
-        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" fragment="technology" (click)="navigateToSection('technology')">technology</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" fragment="portfolio" (click)="navigateToSection('portfolio')">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" fragment="team" (click)="navigateToSection('team')">team</a>
+        <li class="nav-item">
+          <a class="nav-link" fragment="contact" (click)="navigateToSection('contact')">contact</a>
         </li>
       </ul>
     </div>

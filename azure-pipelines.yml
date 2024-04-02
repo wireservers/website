@@ -3,43 +3,40 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
-
 trigger:
-- master
+  - V2
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
-steps:
- 
-- task: NodeTool@0
-  inputs:
-    versionSpec: '18.x'
-  displayName: 'Install Node.js'
- 
-- task: Npm@1  
-  displayName: 'Angular CLI 15.0.3'  
-  inputs:  
-    command: custom  
-    verbose: false  
-    customCommand: 'install -g @angular/cli@15.0.3'
+  steps:
+    - task: NodeTool@0
+      inputs:
+        versionSpec: "20.x"
+      displayName: "Install Node.js"
 
-- task: Npm@1  
-  displayName: ' @angular-devkit/build-angular'  
-  inputs:  
-    command: custom  
-    verbose: false  
-    customCommand: 'install --save-dev @angular-devkit/build-angular --legacy-peer-deps'
+    - task: Npm@1
+      displayName: "Angular CLI 17.3.2"
+      inputs:
+        command: custom
+        verbose: false
+        customCommand: "install -g @angular/cli@17.3.2"
 
-- task: Npm@1
-  displayName: Build
-  inputs:
-    command: custom
-    verbose: false
-    customCommand: 'run build'
+    - task: Npm@1
+      displayName: " @angular-devkit/build-angular"
+      inputs:
+        command: custom
+        verbose: false
+        customCommand: "install --save-dev @angular-devkit/build-angular"
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'dist'
-    ArtifactName: 'wireservers-web-artifacts'
-    
+    - task: Npm@1
+      displayName: Build
+      inputs:
+        command: custom
+        verbose: false
+        customCommand: "run build"
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: "dist"
+        ArtifactName: "wireservers-web-V2-artifacts"

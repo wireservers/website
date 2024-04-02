@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   standalone: true,
   selector: 'app-nav-menu',
   templateUrl: './nav-menu.component.html',
-  styleUrls: ['./nav-menu.component.css']
+  styleUrls: ['./nav-menu.component.css'],
 })
 export class NavMenuComponent {
   isExpanded = false;
@@ -15,5 +15,10 @@ export class NavMenuComponent {
 
   toggle() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  public navigateToSection(section: string) {
+    window.location.hash = '';
+    window.location.hash = section;
   }
 }
