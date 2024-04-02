@@ -41,5 +41,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'dist'
-    ArtifactName: 'wireservers-web-app-artifacts'
+    ArtifactName: 'wireservers-web-artifacts'
     
