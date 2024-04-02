@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+- staging
 
 pool:
   vmImage: ubuntu-latest
@@ -24,4 +24,4 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: "dist"
-    ArtifactName: "wireservers-web-artifacts"
+    ArtifactName: "wireservers-web-staging-artifacts"
