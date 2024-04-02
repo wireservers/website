@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ServicesComponent } from './components/services/services.component';
-import { TechnologyComponent } from './components/technology/technology.component';
-import { TeamComponent } from './components/team/team.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { NavMenuComponent } from './components/shared/nav-menu/nav-menu.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { ServicesSectionComponent } from './components/sections/services-section/services-section.component';
+import { TechnologySectionComponent } from './components/sections/technology-section/technology-section.component';
+import { TeamSectionComponent } from './components/sections/team-section/team-section.component';
+import { ContactSectionComponent } from './components/sections/contact-section/contact-section.component';
 
 @Component({
   selector: 'app-root',
@@ -15,10 +15,10 @@ import { FooterComponent } from './components/footer/footer.component';
     RouterOutlet,
     NavMenuComponent,
     HeaderComponent,
-    ServicesComponent,
-    TechnologyComponent,
-    TeamComponent,
-    ContactComponent,
+    ServicesSectionComponent,
+    TechnologySectionComponent,
+    TeamSectionComponent,
+    ContactSectionComponent,
     FooterComponent,
   ],
   templateUrl: './app.component.html',
