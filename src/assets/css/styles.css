@@ -4058,6 +4058,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  text-align: end;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -11289,12 +11290,12 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3.5rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -11352,6 +11353,7 @@ p {
   font-size: 0.95rem;
   color: #21252A;
   letter-spacing: 0.0625em;
+  cursor: pointer;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: var(--bs-primary);
@@ -11397,7 +11399,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/bg/708040780-vector [Converted].jpg");
+  background-image: url("./../img/bg/708040780-vector\ [Converted].jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11427,13 +11429,15 @@ header.masthead .masthead-heading {
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
-    margin-bottom: 2rem;
+    text-align: end;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
+    text-align: end;
+
   }
 }
 #portfolio .portfolio-item {
@@ -11708,7 +11712,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/bg/bg-map-blue.jpg");
+  background-image: url("./../img/bg/bg-map-blue.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11795,7 +11799,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .image-content img {
   width: 100%;
   height: auto;
-  padding: 2rem; 
+  padding: 2rem;
   background-color: #fff;
 }
 
