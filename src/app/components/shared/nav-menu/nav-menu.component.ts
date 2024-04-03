@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { NavigationService } from '../../services/navigation.service';
+import { Router } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -8,6 +10,9 @@ import { Component } from '@angular/core';
 })
 export class NavMenuComponent {
   isExpanded = false;
+  navService = inject(NavigationService);
+
+  constructor(private route: Router) {}
 
   collapse() {
     this.isExpanded = false;
@@ -17,8 +22,7 @@ export class NavMenuComponent {
     this.isExpanded = !this.isExpanded;
   }
 
-  public navigateToSection(section: string) {
-    window.location.hash = '';
-    window.location.hash = section;
+  navigate(section: string) {
+    this.navService.navigate(this.route.url, section);
   }
 }

@@ -6,6 +6,7 @@ import { PortfolioSectionComponent } from '../sections/portfolio-section/portfol
 import { ServicesSectionComponent } from '../sections/services-section/services-section.component';
 import { TeamSectionComponent } from '../sections/team-section/team-section.component';
 import { TechnologySectionComponent } from '../sections/technology-section/technology-section.component';
+import { HeaderComponent } from '../shared/header/header.component';
 
 @Component({
   standalone: true,
@@ -17,6 +18,7 @@ import { TechnologySectionComponent } from '../sections/technology-section/techn
     ServicesSectionComponent,
     TeamSectionComponent,
     TechnologySectionComponent,
+    HeaderComponent,
   ],
   selector: 'app-home',
   templateUrl: './home.component.html',

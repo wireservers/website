@@ -1,7 +1,7 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="#page-top">
+    <a class="navbar-brand" (click)="navigate('')">
       <img src="assets/img/Converted-PNG.png" alt="..." />
     </a>
     <button
@@ -18,25 +18,27 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" fragment="home" (click)="navigateToSection('home')">home</a>
-      </li>
         <li class="nav-item">
-          <a class="nav-link" fragment="about" (click)="navigateToSection('about')">about us</a>
+          <a class="nav-link" (click)="navigate('')">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" fragment="services" (click)="navigateToSection('services')">services</a>
+          <a class="nav-link" (click)="navigate('about')">about us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" fragment="technology" (click)="navigateToSection('technology')">technology</a>
+          <a class="nav-link" (click)="navigate('services')">services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" fragment="portfolio" (click)="navigateToSection('portfolio')">portfolio</a>
+          <a class="nav-link" (click)="navigate('technology')">technology</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" fragment="team" (click)="navigateToSection('team')">team</a>
+          <a class="nav-link" (click)="navigate('portfolio')">portfolio</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" fragment="contact" (click)="navigateToSection('contact')">contact</a>
+          <a class="nav-link" (click)="navigate('team')">team</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigate('contact')">contact</a>
         </li>
       </ul>
     </div>
