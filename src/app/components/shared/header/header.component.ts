@@ -1,6 +1,5 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { NavigationService } from '../../services/navigation.service';
-import { Router } from '@angular/router';
+import { Component, OnInit, inject } from '@angular/core';import { Router } from '@angular/router';
+import { NavigationService } from '../../../shared/services/navigation.service';
 
 @Component({
   standalone: true,
@@ -16,7 +15,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {}
 
   navigate(section: string) {
-    console.log(section);
     this.navService.navigate(this.route.url, section);
   }
 }

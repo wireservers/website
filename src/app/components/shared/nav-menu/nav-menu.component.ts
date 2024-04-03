@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
-import { NavigationService } from '../../services/navigation.service';
 import { Router } from '@angular/router';
+import { NavigationService } from '../../../shared/services/navigation.service';
 
 @Component({
   standalone: true,

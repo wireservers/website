@@ -11798,10 +11798,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .image-content img {
-  width: 100%;
-  height: auto;
   padding: 2rem;
   background-color: #fff;
+}
+
+.aside {
+  margin: 7rem 0 0 3rem;
+  float: right;
 }
 
 .text-content {
