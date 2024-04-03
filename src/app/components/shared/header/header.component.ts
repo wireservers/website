@@ -16,7 +16,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {}
 
   navigate(section: string) {
-    console.log(section);
     this.navService.navigate(this.route.url, section);
   }
 }
