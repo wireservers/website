@@ -5,6 +5,8 @@
 
 trigger:
   - master
+  - development
+  - hotfix
 
 pool:
   vmImage: ubuntu-latest
