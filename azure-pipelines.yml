@@ -10,7 +10,7 @@ trigger:
       - development
   paths:
     include:
-      - "wireservers.com/website/*"
+      - "wireservers.com/website"
 
 pool:
   vmImage: ubuntu-latest
