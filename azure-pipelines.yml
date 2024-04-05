@@ -36,12 +36,8 @@ steps:
     verbose: false  
     customCommand: 'install --save-dev @angular-devkit/build-angular'
 
-- task: Npm@1
-  displayName: Build
-  inputs:
-    command: custom
-    verbose: false
-    customCommand: 'ng build'
+  - script: |
+    'ng build'
 
 - task: PublishBuildArtifacts@1
   inputs:
