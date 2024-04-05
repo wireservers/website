@@ -17,29 +17,30 @@ pool:
 
 steps:
 
-- task: NodeTool@0
-  inputs:
-    versionSpec: '18.x'
-  displayName: 'Install Node.js'
- 
-- task: Npm@1  
-  displayName: 'Angular CLI 17.3.2' 
-  inputs:  
-    command: custom  
-    verbose: false  
-    customCommand: 'install -g @angular/cli@17.3.2'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x'
+    displayName: 'Install Node.js'
+  
+  - task: Npm@1  
+    displayName: 'Angular CLI 17.3.2' 
+    inputs:  
+      command: custom  
+      verbose: false  
+      customCommand: 'install -g @angular/cli@17.3.2'
 
-- task: Npm@1  
-  displayName: ' @angular-devkit/build-angular' 
-  inputs:  
-    command: custom  
-    verbose: false  
-    customCommand: 'install --save-dev @angular-devkit/build-angular'
+  - task: Npm@1  
+    displayName: ' @angular-devkit/build-angular' 
+    inputs:  
+      command: custom  
+      verbose: false  
+      customCommand: 'install --save-dev @angular-devkit/build-angular'
 
   - script: |
-    'ng build'
+      ng build
+    displayName: "npm install and build"
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: "dist"
-    ArtifactName: "wireservers-web-artifacts"
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: "dist"
+      ArtifactName: "wireservers-web-artifacts"
