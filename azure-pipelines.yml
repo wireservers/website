@@ -7,9 +7,6 @@ trigger:
   branches:
     include:
       - development
-  # paths:
-  #   include:
-  #     - "**/*"
 
 pool:
   vmImage: ubuntu-latest
