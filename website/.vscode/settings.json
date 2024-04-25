@@ -1,1 +1,9 @@
-{}
+{
+    "azureAutomation.directory.basePath": "",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/d6ff07d7-32cf-4452-8ef5-6aa5f403acdd/resourceGroups/applications-rg/providers/Microsoft.Web/sites/ws-cloud",
+    "appService.deploySubpath": "."
+}
