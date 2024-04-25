@@ -14,25 +14,25 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-  - task: NodeTool@0
-    displayName: "Install Node.js"
-    inputs:
-      versionSpec: "18.x"
+  steps:
+    - task: NodeTool@0
+      displayName: "Install Node.js"
+      inputs:
+        versionSpec: "18.x"
 
-  - task: Npm@1
-    displayName: "Running npm install for packages"
-    inputs:
-      command: "install"
-      workingDir: "website"
-      verbose: true
+    - task: Npm@1
+      displayName: "Running npm install for packages"
+      inputs:
+        command: "install"
+        workingDir: "website"
+        verbose: true
 
-  - task: CmdLine@2
-    inputs:
-      script: "node ./node_modules/.bin/ng build"
-      workingDirectory: "website"
+    - task: CmdLine@2
+      inputs:
+        script: "node ./node_modules/.bin/ng build"
+        workingDirectory: "website"
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: "website/dist"
-      ArtifactName: "wireservers-website-artifacts"
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: "website/dist"
+        ArtifactName: "wireservers-website-artifacts"
