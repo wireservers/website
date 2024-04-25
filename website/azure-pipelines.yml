@@ -12,16 +12,15 @@ pool:
 steps:
   - task: NodeTool@0
     inputs:
-      versionSpec: "20.x"
+      versionSpec: "18.x"
     displayName: "Install Node.js"
 
-  - script: |
-      npm install -g @angular/cli
+  - script: npm install -g @angular/cli
       npm install
       ng build
     displayName: "npm install and build"
 
   - task: PublishBuildArtifacts@1
     inputs:
-      PathtoPublish: "dist"
+      PathtoPublish: "dist/browser"
       ArtifactName: "wireservers-web-artifacts"
